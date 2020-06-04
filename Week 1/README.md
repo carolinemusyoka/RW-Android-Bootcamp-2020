@@ -20,3 +20,20 @@ Unicode | Meaning| Symbol/Output
 '\u2660' | spade |:spades:
 '\u2666' | diamond | :diamonds:
 '\u2665' | heart| :hearts:
+
+##### Functions
+- createDeck Function
+- dealHand Function
+- evaluateHand Function
+- printResults
+
+
+###### The output
+
+```
+Your hand was :
+10 :hearts:
+Q :clubs:
+For a totalof :  20
+You lost ;-(
+```
