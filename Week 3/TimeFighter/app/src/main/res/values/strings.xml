@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">Time Fighter</string>
+    <string name="score">Score: %s</string>
+    <string name="timeleft">Time Left: %s</string>
+    <string name="tap_me">Tap Me!</string>
+    <string name="game_over">"Time's up! Your score was: %s"</string>
+    <string name="about_menu">About</string>
+    <string name="about_title">Time Fighter %s</string>
+    <string name="about_message">Created by Carol Musyoka</string>
+</resources>
