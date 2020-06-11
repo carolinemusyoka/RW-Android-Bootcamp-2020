@@ -103,7 +103,7 @@ class MainActivity : AppCompatActivity() {
         countDownTimer = object : CountDownTimer(timeleftOnTimer, countDownInterval) {
             override fun onTick(millisUntilFinished: Long) {
                 timeleftOnTimer = millisUntilFinished
-                var timeleft = millisUntilFinished / 1000
+                val timeleft = millisUntilFinished / 1000
                 timeleftText.text = getString(R.string.timeleft, timeleft.toString())
             }
             override fun onFinish() {
