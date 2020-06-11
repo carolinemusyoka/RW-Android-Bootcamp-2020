@@ -14,20 +14,20 @@ import androidx.appcompat.app.AlertDialog
 
 class MainActivity : AppCompatActivity() {
 
-    internal lateinit var tapButton: Button
+    private lateinit var tapButton: Button
     private lateinit var scoreText: TextView
     internal lateinit var timeleftText: TextView
-    internal var scoreCount = 0
-    internal var gameStarted = false
-    internal lateinit var countDownTimer: CountDownTimer
-    internal val initialCountDown: Long = 20000
-    internal val countDownInterval: Long = 1000
-    internal val TAG = MainActivity::class.java.simpleName
-    internal var timeleftOnTimer: Long = 60000
+    private var scoreCount = 0
+    private var gameStarted = false
+    private lateinit var countDownTimer: CountDownTimer
+    private val initialCountDown: Long = 20000
+    private val countDownInterval: Long = 1000
+    private val TAG = MainActivity::class.java.simpleName
+    private var timeleftOnTimer: Long = 60000
 
     companion object {
-        private val SCORE_KEY = "SCORE_KEY"
-        private val TIME_LEFT_KEY = "TIME_LEFT_KEY"
+        private const val SCORE_KEY = "SCORE_KEY"
+        private const val TIME_LEFT_KEY = "TIME_LEFT_KEY"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
