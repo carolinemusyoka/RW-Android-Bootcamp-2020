@@ -50,8 +50,8 @@
 
     <Button
         android:id="@+id/quotegenerator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="125dp"
+        android:layout_height="42dp"
         android:background="@drawable/roundbutton"
         android:text="@string/let_s_have_fun"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -124,15 +124,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        app:backgroundTint="#D5FD5A19"
+        android:focusable="true"
+        app:backgroundTint="#ff5733"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.912"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/quotespace"
         app:layout_constraintVertical_bias="0.815"
-        app:srcCompat="?attr/actionModeShareDrawable"
-        android:focusable="true" />
+        app:srcCompat="?attr/actionModeShareDrawable" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
