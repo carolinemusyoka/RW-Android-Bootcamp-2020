@@ -37,7 +37,7 @@
         android:layout_width="382dp"
         android:layout_height="113dp"
         android:fontFamily="cursive"
-        android:text="Check out Some amazing facts about the Maasai"
+        android:text="@string/facts"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/roundbutton"
-        android:text="Button"
+        android:text="@string/let_s_have_fun"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -65,8 +65,8 @@
         android:id="@+id/callme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Call us"
-        android:textSize="20dp"
+        android:text="@string/call_us"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,8 +79,8 @@
         android:id="@+id/emailme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email us"
-        android:textSize="20dp"
+        android:text="@string/email_us"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,7 +102,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/quotespace"
         app:layout_constraintVertical_bias="0.488"
-        app:srcCompat="@android:drawable/stat_sys_phone_call" />
+        app:srcCompat="@android:drawable/stat_sys_phone_call"
+        android:contentDescription="@string/todo" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -130,7 +131,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/quotespace"
         app:layout_constraintVertical_bias="0.815"
-        app:srcCompat="?attr/actionModeShareDrawable" />
+        app:srcCompat="?attr/actionModeShareDrawable"
+        android:focusable="true" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

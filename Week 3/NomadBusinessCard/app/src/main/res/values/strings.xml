@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">NomadBusinessCard</string>
     <string name="todo">TODO</string>
+    <string name="facts">Check out Some amazing facts about the Maasai</string>
+    <string name="let_s_have_fun">Let`s have fun!!</string>
+    <string name="call_us">Call us</string>
+    <string name="email_us">Email us</string>
 
 </resources>
