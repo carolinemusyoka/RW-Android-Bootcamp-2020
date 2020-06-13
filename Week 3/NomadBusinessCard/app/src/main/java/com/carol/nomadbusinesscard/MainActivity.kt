@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     private lateinit var text: TextView
@@ -63,6 +64,17 @@ class MainActivity : AppCompatActivity() {
             text.setText(randomQuote)
 
 
+        }
+        val fab: View = findViewById(R.id.fab)
+        val randomQuote = facts.random()
+        fab.setOnClickListener {
+            val s = randomQuote
+            //Intent to share the text
+            val shareIntent = Intent()
+            shareIntent.action = Intent.ACTION_SEND
+            shareIntent.type="text/plain"
+            shareIntent.putExtra(Intent.EXTRA_TEXT, s);
+            startActivity(Intent.createChooser(shareIntent,"Share via"))
         }
 
     }
