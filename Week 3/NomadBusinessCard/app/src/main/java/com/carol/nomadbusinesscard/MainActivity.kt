@@ -47,10 +47,16 @@ class MainActivity : AppCompatActivity() {
         text = findViewById(R.id.quotespace)
         mybtn = findViewById(R.id.quotegenerator)
         val facts = arrayOf(
-            "Kenya is ....",
-            "sdjasjdnksjd",
-            "snsankxasmkas",
-            "sxjksaxkdasmxds"
+            "The Maasai Tribe inhabit more than one country: Kenya and Tanzania",
+            "The Maasai Tribe is made up of sixteen sections(Sub tribes)",
+            " Blood is part of the Maasai diet: Its definitely not gross",
+            "The Maasai are named after their own language",
+            "The Maasai have their own traditional wardrobe",
+            "Maasai members pride themselves on their cows",
+            "There are different religions within the Maasai Tribe",
+            "The Maasai Tribe are mostly polygamous",
+            "Children in the Maasai Tribe are not named until three months of age",
+            "The Maasai have their own calendar"
         )
         mybtn.setOnClickListener {
             val randomQuote = facts.random()
