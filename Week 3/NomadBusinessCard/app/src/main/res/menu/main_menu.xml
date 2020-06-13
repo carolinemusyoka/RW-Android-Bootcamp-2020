@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="Settings"/>
-    <item
-        android:id="@+id/action_share"
-        android:title="Share"
-        app:showAsAction="never"/>
-    <item
-        android:id="@+id/action_exit"
-        android:title="Exit"
-        app:showAsAction="never"/>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/about_menu" android:id="@+id/action_about"
+        android:icon="@android:drawable/ic_menu_info_details" app:showAsAction="always"/>
 </menu>

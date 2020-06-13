@@ -5,5 +5,7 @@
     <string name="let_s_have_fun">Let`s have fun!!</string>
     <string name="call_us">Call us</string>
     <string name="email_us">Email us</string>
-
+    <string name="about_menu">About</string>
+   <string name="about_title"> Version 1.0.00</string>
+   <string name="about_message">Created by Carol Musyoka</string>
 </resources>

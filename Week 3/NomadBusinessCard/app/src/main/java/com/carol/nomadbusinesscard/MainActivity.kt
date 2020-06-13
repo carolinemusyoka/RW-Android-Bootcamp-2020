@@ -12,6 +12,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
@@ -86,25 +87,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.main_menu, menu)
+        showInfo()
         return true
     }
         
-        override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.action_settings -> {
-                Toast.makeText(applicationContext, "click on setting", Toast.LENGTH_LONG).show()
-                true
-            }
-            R.id.action_share ->{
-                Toast.makeText(applicationContext, "click on share", Toast.LENGTH_LONG).show()
-                return true
-            }
-            R.id.action_exit ->{
-                Toast.makeText(applicationContext, "click on exit", Toast.LENGTH_LONG).show()
-                return true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
+
+    private fun showInfo() {
+        val dialogTitle = getString(R.string.about_title)
+        val dialogMessage = getString(R.string.about_message)
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle(dialogTitle)
+        builder.setMessage(dialogMessage)
+        builder.create().show()
     }
 }
 
