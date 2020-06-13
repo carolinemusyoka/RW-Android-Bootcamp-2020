@@ -5,6 +5,9 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -12,6 +15,7 @@ import android.widget.Toast
 import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var text: TextView
     private lateinit var mybtn: Button
 
@@ -78,4 +82,29 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+        
+        override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_settings -> {
+                Toast.makeText(applicationContext, "click on setting", Toast.LENGTH_LONG).show()
+                true
+            }
+            R.id.action_share ->{
+                Toast.makeText(applicationContext, "click on share", Toast.LENGTH_LONG).show()
+                return true
+            }
+            R.id.action_exit ->{
+                Toast.makeText(applicationContext, "click on exit", Toast.LENGTH_LONG).show()
+                return true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
 }
+
