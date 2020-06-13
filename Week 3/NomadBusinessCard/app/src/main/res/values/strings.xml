@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NomadBusinessCard</string>
+    <string name="todo">TODO</string>
+
 </resources>
