@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-
         val callme = findViewById<View>(R.id.callme)
         callme.setOnClickListener {
             val callIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:+254741102889"))
@@ -43,7 +42,8 @@ class MainActivity : AppCompatActivity() {
         val emailme = findViewById<View>(R.id.emailme)
         emailme.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO)
-            intent.data = Uri.parse("mailto:thenomadke@gmail.com") // only email apps should handle this
+            intent.data =
+                Uri.parse("mailto:thenomadke@gmail.com") // only email apps should handle this
             intent.putExtra(Intent.EXTRA_EMAIL, "")
             intent.putExtra(Intent.EXTRA_SUBJECT, "Feedback")
             startActivity(intent)
@@ -77,9 +77,9 @@ class MainActivity : AppCompatActivity() {
             //Intent to share the text
             val shareIntent = Intent()
             shareIntent.action = Intent.ACTION_SEND
-            shareIntent.type="text/plain"
+            shareIntent.type = "text/plain"
             shareIntent.putExtra(Intent.EXTRA_TEXT, s);
-            startActivity(Intent.createChooser(shareIntent,"Share via"))
+            startActivity(Intent.createChooser(shareIntent, "Share via"))
         }
 
     }
@@ -87,18 +87,28 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.main_menu, menu)
-        showInfo()
         return true
     }
-        
 
-    private fun showInfo() {
-        val dialogTitle = getString(R.string.about_title)
-        val dialogMessage = getString(R.string.about_message)
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle(dialogTitle)
-        builder.setMessage(dialogMessage)
-        builder.create().show()
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+
+            R.id.action_version -> {
+                Toast.makeText(applicationContext, "Version 1.0.0", Toast.LENGTH_LONG).show()
+                return true
+            }
+            else -> super.onOptionsItemSelected(item)
+
+
+        }
+
     }
 }
+
+
+
+        
+
+
+
 
