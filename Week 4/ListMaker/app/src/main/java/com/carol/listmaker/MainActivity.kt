@@ -1,5 +1,6 @@
 package com.carol.listmaker
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.InputType
 import android.view.Menu
@@ -12,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), ListSelectionRecyclerViewAdapter.ListSelectionRecyclerViewClickListener {
 
     lateinit var listsRecyclerView: RecyclerView
     val listDataManager: ListDataManager = ListDataManager(this)
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+
+        
 
         fab.setOnClickListener { view ->
            showCreateListDialog()
@@ -32,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         // 2
         listsRecyclerView.layoutManager = LinearLayoutManager(this)
         // 3
-        listsRecyclerView.adapter = ListSelectionRecyclerViewAdapter(lists)
+        listsRecyclerView.adapter = ListSelectionRecyclerViewAdapter(lists, this)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -72,10 +75,25 @@ class MainActivity : AppCompatActivity() {
             recyclerAdapter.addList(list)
 
             dialog.dismiss()
+            showListDetail(list)
         }
 
         // 4
         builder.create().show()
+    }
+
+    private fun showListDetail(list: TaskList){
+        val listDetailIntent = Intent(this, ListDetailActivity::class.java)
+        listDetailIntent.putExtra(INTENT_LIST_KEY, list)
+        startActivity(listDetailIntent)
+    }
+
+    override fun listItemClicked(list: TaskList) {
+        showListDetail(list)
+    }
+
+    companion object{
+        const val INTENT_LIST_KEY = "list"
     }
 }
 
