@@ -1,4 +1,6 @@
 package com.carol.listmaker
 
-class ListSelectionRecyclerViewAdapter {
+import androidx.recyclerview.widget.RecyclerView
+
+class ListSelectionRecyclerViewAdapter: RecyclerView.Adapter<ListSelectionViewHolder>() {
 }
