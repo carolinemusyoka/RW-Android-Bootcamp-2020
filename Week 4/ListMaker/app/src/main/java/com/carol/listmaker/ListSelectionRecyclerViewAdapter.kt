@@ -9,7 +9,7 @@ class ListSelectionRecyclerViewAdapter: RecyclerView.Adapter<ListSelectionViewHo
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListSelectionViewHolder {
          val view = LayoutInflater.from(parent.context)
              .inflate(R.layout.list_selection_view_holder,parent,false)
-        return ListSelectionViewHolder()
+        return ListSelectionViewHolder(view)
     }
 
     override fun getItemCount(): Int {
@@ -18,6 +18,7 @@ class ListSelectionRecyclerViewAdapter: RecyclerView.Adapter<ListSelectionViewHo
     }
 
     override fun onBindViewHolder(holder: ListSelectionViewHolder, position: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+       holder.listPosition.text = (position + 1).toString()
+        holder.listTitle.text = listTitles[position]
     }
 }
