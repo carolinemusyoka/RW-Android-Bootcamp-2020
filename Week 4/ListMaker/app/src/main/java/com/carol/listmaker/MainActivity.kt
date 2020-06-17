@@ -8,24 +8,28 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
-import org.intellij.lang.annotations.JdkConstants
 
 class MainActivity : AppCompatActivity() {
- lateinit var listRecyclerView: RecyclerView
+
+    lateinit var listsRecyclerView: RecyclerView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        listRecyclerView = findViewById(R.id.list_recyclerview)
-        listRecyclerView.layoutManager = LinearLayoutManager(this)
-        listRecyclerView.adapter = ListSelectionRecyclerViewAdapter()
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
-    }
 
+        // 1
+        listsRecyclerView = findViewById(R.id.lists_recyclerview)
+        // 2
+        listsRecyclerView.layoutManager = LinearLayoutManager(this)
+        // 3
+        listsRecyclerView.adapter = ListSelectionRecyclerViewAdapter()
+    }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
