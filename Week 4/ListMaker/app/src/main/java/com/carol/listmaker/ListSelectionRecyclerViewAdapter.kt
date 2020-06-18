@@ -3,7 +3,6 @@ package com.carol.listmaker
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.raywenderlich.listmaker.ListSelectionViewHolder
 
 class ListSelectionRecyclerViewAdapter(
     val lists: ArrayList<TaskList>,

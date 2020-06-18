@@ -9,8 +9,6 @@ import android.widget.EditText
 import android.widget.FrameLayout
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.carol.listmaker.ListDetailFragment
-import com.carol.listmaker.ListSelectionFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), ListSelectionFragment.OnListItemFragmentInteractionListener {

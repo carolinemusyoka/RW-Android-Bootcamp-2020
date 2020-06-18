@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.raywenderlich.listmaker.ListItemsRecyclerViewAdapter
+import com.carol.listmaker.ListItemsRecyclerViewAdapter
 
 class ListDetailActivity : AppCompatActivity() {
 

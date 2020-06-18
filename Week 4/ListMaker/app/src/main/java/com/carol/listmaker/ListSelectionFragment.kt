@@ -2,19 +2,18 @@ package com.carol.listmaker
 
 import android.content.Context
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.carol.listmaker.ListSelectionRecyclerViewAdapter
 
 class ListSelectionFragment : Fragment(), ListSelectionRecyclerViewAdapter.ListSelectionRecyclerViewClickListener {
 
     lateinit var listDataManager: ListDataManager
 
-    lateinit var listsRecyclerView: RecyclerView
+    private lateinit var listsRecyclerView: RecyclerView
 
     // 1
     private var listener: OnListItemFragmentInteractionListener? = null

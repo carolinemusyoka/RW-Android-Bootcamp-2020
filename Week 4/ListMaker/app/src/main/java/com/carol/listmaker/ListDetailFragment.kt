@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.raywenderlich.listmaker.ListItemsRecyclerViewAdapter
+import com.carol.listmaker.ListItemsRecyclerViewAdapter
 
 class ListDetailFragment : Fragment() {
 
