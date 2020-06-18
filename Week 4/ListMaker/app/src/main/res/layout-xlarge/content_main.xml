@@ -5,13 +5,13 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.raywenderlich.listmaker.MainActivity"
+    tools:context="com.carol.listmaker.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <!-- 1 -->
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/list_selection_fragment"
-        android:name="com.raywenderlich.listmaker.ListSelectionFragment"
+        android:name="com.carol.listmaker.ListSelectionFragment"
         android:layout_width="300dp"
         android:layout_height="match_parent"
         android:layout_marginStart="0dp"

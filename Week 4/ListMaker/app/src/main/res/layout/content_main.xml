@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/list_selection_fragment"
-        android:name="com.raywenderlich.listmaker.ListSelectionFragment"
+        android:name="com.carol.listmaker.ListSelectionFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="0dp"
