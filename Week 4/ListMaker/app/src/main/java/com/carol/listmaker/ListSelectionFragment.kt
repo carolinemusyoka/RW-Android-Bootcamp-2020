@@ -1,4 +1,4 @@
-package com.raywenderlich.listmaker
+package com.carol.listmaker
 
 import android.content.Context
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.carol.listmaker.ListSelectionRecyclerViewAdapter
 
 class ListSelectionFragment : Fragment(), ListSelectionRecyclerViewAdapter.ListSelectionRecyclerViewClickListener {
 

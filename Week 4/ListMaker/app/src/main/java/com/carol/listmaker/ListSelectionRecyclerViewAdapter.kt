@@ -3,12 +3,14 @@ package com.carol.listmaker
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.raywenderlich.listmaker.ListSelectionViewHolder
 
-class ListSelectionRecyclerViewAdapter( val lists: ArrayList<TaskList>, val clickListener: ListSelectionRecyclerViewClickListener) : RecyclerView.Adapter<ListSelectionViewHolder>() {
+class ListSelectionRecyclerViewAdapter(
+    val lists: ArrayList<TaskList>,
+    val clickListener: ListSelectionRecyclerViewClickListener
+) : RecyclerView.Adapter<ListSelectionViewHolder>() {
 
-    val listTitles = arrayOf("Shopping List", "Chores", "Android Tutorials")
-
-    interface ListSelectionRecyclerViewClickListener{
+    interface ListSelectionRecyclerViewClickListener {
         fun listItemClicked(list: TaskList)
     }
 
@@ -41,5 +43,4 @@ class ListSelectionRecyclerViewAdapter( val lists: ArrayList<TaskList>, val clic
         // 2
         notifyItemInserted(lists.size - 1)
     }
-
 }
