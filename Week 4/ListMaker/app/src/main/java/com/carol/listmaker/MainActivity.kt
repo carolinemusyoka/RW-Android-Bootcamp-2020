@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity(), ListSelectionRecyclerViewAdapter.ListS
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        
+
 
         fab.setOnClickListener { view ->
            showCreateListDialog()

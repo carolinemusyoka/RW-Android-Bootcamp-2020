@@ -2,10 +2,12 @@ package com.carol.listmaker
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.RecyclerView
 
 class ListDetailActivity : AppCompatActivity() {
 
     lateinit var list: TaskList
+    lateinit var listItemsRecyclerView: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
