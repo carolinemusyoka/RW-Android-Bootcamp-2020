@@ -1,6 +1,6 @@
 # RW-Android-Bootcamp-2020
 <p align="center">
-<img src="carol.jpg">
+<img src="images/carol.jpg">
   </p>
   
   
