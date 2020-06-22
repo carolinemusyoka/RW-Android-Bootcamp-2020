@@ -25,11 +25,10 @@ class BookDetails : AppCompatActivity() {
         share_text_1_btn.setOnClickListener {
             val sendIntent = Intent()
             sendIntent.action = Intent.ACTION_SEND
-            sendIntent.putExtra(
-                Intent.EXTRA_TEXT,
-                "Hey Check out this Great book:"
-            )
-            sendIntent.type = "text/plain"
+            sendIntent.action = Intent.ACTION_SEND;
+            sendIntent.putExtra(Intent.EXTRA_TEXT,bookDetails.text.toString())
+            sendIntent.type = "text/plain";
+            Intent.createChooser(sendIntent,"Share via")
             startActivity(sendIntent)
         }
     }
