@@ -1,0 +1,51 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.carol.mybookcollection"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:5:5-22:19
+12        android:allowBackup="true"
+12-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.3.0] C:\Gradle\caches\transforms-2\files-2.1\94f20d27a10319ac7cc954b79a2e42ae\core-1.3.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:11:9-40
+21        <activity android:name="com.carol.mybookcollection.BookDetails" >
+21-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:12:9-14:20
+21-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:12:19-46
+22        </activity>
+23        <activity android:name="com.carol.mybookcollection.MainActivity" >
+23-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:15:9-21:20
+23-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:15:19-47
+24            <intent-filter>
+24-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:16:13-20:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:17:17-69
+25-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:17:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:19:17-77
+27-->E:\RW-Android-Bootcamp-2020\Week 4\MyBookCollection\app\src\main\AndroidManifest.xml:19:27-74
+28            </intent-filter>
+29        </activity>
+30    </application>
+31
+32</manifest>
