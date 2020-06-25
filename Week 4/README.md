@@ -8,7 +8,7 @@
 - Jetpack Navigation & ViewModel*
 
 
-# Project 1.
+# Project 1
 ## ListMaker
  This will help you organize your tasks.
  A peek at the screenshots
@@ -30,7 +30,7 @@
 
 
 
-
+# Project 2
 ## MyBook Collection
 A project extending usage of lists. I Used recyclerviews and an adapter. 
 A few Screenshots of the project.
