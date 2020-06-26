@@ -8,19 +8,24 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
+import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.location.*
-
+import com.google.android.libraries.places.api.Places
+import com.google.android.libraries.places.api.net.PlacesClient
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.PointOfInterest
+import com.google.android.libraries.places.api.model.Place
+import com.google.android.libraries.places.api.net.FetchPlaceRequest
 import kotlinx.android.synthetic.main.activity_maps.*
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
-
+     private lateinit var placesClient: PlacesClient
     private lateinit var map: GoogleMap
     private lateinit var fusedLocationClient: FusedLocationProviderClient
 
@@ -32,6 +37,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
         setupLocationClient()
+        setUpPlacesClient()
     }
 
     /**
@@ -47,8 +53,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         map = googleMap
         getCurrentLocation()
         map.setOnPoiClickListener{
-            Toast.makeText(this,it.name,Toast.LENGTH_LONG).show()
+            displayPoi(it)
         }
+    }
+    private fun setUpPlacesClient(){
+        Places.initialize(getApplicationContext(),getString(R.string.google_maps_key));
+        placesClient = Places.createClient(this)
     }
 
     private fun setupLocationClient(){
@@ -99,6 +109,39 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     companion object{
         private const val REQUEST_LOCATION =1
         private const val TAG = "MapsActivity"
+    }
+
+    private fun displayPoi(pointOfInterest: PointOfInterest){
+        val placeId = pointOfInterest.placeId
+
+        val placeFields = listOf(Place.Field.ID,
+            Place.Field.NAME,
+            Place.Field.PHONE_NUMBER,
+            Place.Field.PHOTO_METADATAS,
+            Place.Field.ADDRESS,
+            Place.Field.LAT_LNG
+        )
+
+        val request = FetchPlaceRequest
+            .builder(placeId,placeFields)
+            .build()
+
+        placesClient.fetchPlace(request)
+            .addOnSuccessListener { response ->
+                val place = response.place
+                Toast.makeText(this,
+                    "${place.name}," +
+                            "${place.phoneNumber}",
+                    Toast.LENGTH_LONG).show()
+            }.addOnFailureListener { exception ->
+                if(exception is ApiException){
+                    val statusCode = exception.statusCode
+                    Log.e(TAG,
+                        "Places not found: " +
+                                exception.message +", " +
+                                "statusCode: " + statusCode)
+                }
+            }
     }
 }
 
