@@ -10,59 +10,102 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.carol.mybookcollection.R
+import com.carol.mybookcollection.model.UserAccount
 import com.carol.mybookcollection.viewmodel.UserViewModel
+import kotlinx.android.synthetic.main.activity_login.*
 
 
 class LoginActivity : AppCompatActivity() {
 
-    private var userViewModel: UserViewModel? = null
-    private var usernameText: EditText? = null
-    private var passwordText: EditText? = null
-    private var loginButton: ImageView? = null
-    private var signupButton: TextView? = null
+    /**
+     * @param isExist  bool parameter for check existency of user or not in database
+     */
+    var isExist = false
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        usernameText = findViewById(R.id.username)
-        passwordText = findViewById(R.id.password)
-        loginButton = findViewById(R.id.login)
-        signupButton = findViewById(R.id.signup)
+        //calling viewmodel object
+        val userRepo = ViewModelProvider(this).get(UserViewModel::class.java)
 
-        userViewModel = ViewModelProvider(this, UserViewModel.Factory(applicationContext)).get(UserViewModel::class.java)
-
-        val signup = getSharedPreferences("PREFERENCE", Context.MODE_PRIVATE)
-            .getBoolean("signup", true)
-
-        if (signup) {
-            signupButton!!.visibility = View.VISIBLE
-            loginButton!!.visibility = View.GONE
-        } else {
-            signupButton!!.visibility = View.GONE
-            loginButton!!.visibility = View.VISIBLE
-
-        }
-
-        loginButton!!.setOnClickListener {
-            val isValid = userViewModel!!.checkValidLogin(usernameText!!.text.toString(), passwordText!!.text.toString())
-            if (isValid) {
-                Toast.makeText(baseContext, "Successfully Logged In!", Toast.LENGTH_LONG).show()
-                Log.i("Successful_Login", "Login was successful")
-            } else {
-                Toast.makeText(baseContext, "Invalid Login!", Toast.LENGTH_SHORT).show()
-                Log.i("Unsuccessful_Login", "Login was not successful")
-            }
-        }
-
-        signupButton!!.setOnClickListener {
-           val intent = Intent(this,signup::class.java)
+        signup.setOnClickListener {
+            val intent = Intent(this@LoginActivity, SignUpActivity::class.java)
+            // start your next activity
             startActivity(intent)
-            Toast.makeText(baseContext, " Create An Account!", Toast.LENGTH_LONG).show()
+        }
+
+
+        login.setOnClickListener {
+            if (validation()) {
+
+
+                userRepo.getGetAllData().observe(this, object : Observer<List<UserAccount>> {
+                    override fun onChanged(t: List<UserAccount>) {
+                        var userObject = t
+
+                        for (i in userObject.indices) {
+                            if (userObject[i].username?.equals(username.text.toString())!!) {
+
+                                if (userObject[i].password?.equals(password.text.toString())!!) {
+
+                                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                                        .putExtra("UserDetials", userObject[i])
+                                    // start your next activity
+                                    startActivity(intent)
+
+                                } else {
+                                    Toast.makeText(this@LoginActivity, " Password is Incorrect ", Toast.LENGTH_LONG)
+                                        .show()
+                                }
+                                isExist = true
+                                break
+
+                            } else {
+                                isExist = false
+                            }
+                        }
+
+                        if (isExist) {
+
+                        } else {
+
+                            Toast.makeText(this@LoginActivity, " User Not Registered ", Toast.LENGTH_LONG).show()
+                        }
+
+                    }
+
+                })
+            }
         }
 
 
     }
+
+    /**
+     * Attempts to sign in  the account specified by the login form.
+     * If there are form errors (invalid mobile, missing fields, etc.), the
+     * errors are presented in form of toast and no actual login attempt is made.
+     */
+    private fun validation(): Boolean {
+
+        if (username.text.isNullOrEmpty()) {
+            Toast.makeText(this@LoginActivity, " Enter Your Username ", Toast.LENGTH_LONG).show()
+            return false
+        }
+        if (username.text.toString().length != 10) {
+            Toast.makeText(this@LoginActivity, " At least 10 characters ", Toast.LENGTH_LONG).show()
+            return false
+        }
+        if (password.text.isNullOrEmpty()) {
+            Toast.makeText(this@LoginActivity, " Enter Password ", Toast.LENGTH_LONG).show()
+            return false
+        }
+        return true
+    }
+
+
 }

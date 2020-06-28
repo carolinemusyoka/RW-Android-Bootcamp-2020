@@ -1,28 +1,30 @@
 package com.carol.mybookcollection.viewmodel
 
+import android.app.Application
 import android.content.Context
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.carol.mybookcollection.db.UserAccountDatabase
+import com.carol.mybookcollection.model.UserAccount
 import com.carol.mybookcollection.repository.UserRepository
 
-class UserViewModel(context: Context) : ViewModel() {
+class UserViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val userRepository: UserRepository = UserRepository.getInstance(UserAccountDatabase.getAppDatabase(context).userAccountDao())
+    private var repository: UserRepository
+    private var getAllDatas: LiveData<List<UserAccount>>
 
-    internal fun createUser(username: String, password: String) {
-        userRepository.insertUser(username, password)
+    init {
+
+        repository = UserRepository(application)
+        getAllDatas = repository.getAllData()!!
     }
 
-    internal fun checkValidLogin(username: String, password: String): Boolean {
-        return userRepository.isValidAccount(username, password)
+    fun insert(data: UserAccount) {
+        repository.insertData(data)
     }
-
-    class Factory internal constructor(ctxt: Context) : ViewModelProvider.Factory {
-        private val ctxt: Context = ctxt.applicationContext
-
-        override fun <T : ViewModel> create(modelClass: Class<T>): T {
-            return UserViewModel(ctxt) as T
-        }
+    fun getGetAllData(): LiveData<List<UserAccount>> {
+        return getAllDatas
     }
 }

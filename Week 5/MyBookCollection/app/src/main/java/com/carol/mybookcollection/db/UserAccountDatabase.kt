@@ -6,30 +6,32 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.carol.mybookcollection.model.UserAccount
 
-@Database(entities = [UserAccount::class], version = 1)
+@Database(entities = [UserAccount::class], version = 1, exportSchema = false)
 abstract class UserAccountDatabase : RoomDatabase() {
 
-    abstract fun userAccountDao(): UserAccountDao
+    abstract fun daoAccess(): UserAccountDao
 
     companion object {
-        private var INSTANCE: UserAccountDatabase? = null
 
-        fun getAppDatabase(context: Context): UserAccountDatabase {
-            if (INSTANCE == null) {
-                INSTANCE = Room.databaseBuilder(
-                    context.applicationContext,
-                    UserAccountDatabase::class.java,
-                    "user-database")
-                    .build()
+        private var INSTANCE: UserAccountDatabase? = null
+        fun getDatabase(context: Context): UserAccountDatabase? {
+
+            if (INSTANCE == null) synchronized(UserAccountDatabase::class.java) {
+
+                if (INSTANCE == null) {
+
+                    INSTANCE = Room.databaseBuilder(
+                        context, UserAccountDatabase::class.java, "USER_DATABASE"
+                    ).allowMainThreadQueries()
+                        .fallbackToDestructiveMigration()
+                        .build()
+
+                }
+
             }
 
-            return INSTANCE!!
+            return INSTANCE
 
-        }
-
-        fun destroyInstance() {
-            INSTANCE = null
         }
     }
-
 }

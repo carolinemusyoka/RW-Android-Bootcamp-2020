@@ -3,10 +3,10 @@ package com.carol.mybookcollection
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.carol.mybookcollection.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.android.synthetic.main.activity_book_details.*
 import kotlinx.android.synthetic.main.book_entry.*
-import kotlinx.android.synthetic.main.activity_book_details.bookName as bookName1
 
 class BookDetails : AppCompatActivity() {
 
@@ -16,9 +16,9 @@ class BookDetails : AppCompatActivity() {
 
         val bundle= intent.extras
 
-        imgBookDetails.setImageResource(bundle.getInt("image"))
-        bookName.text = bundle.getString("name")
-        bookDetails.text = bundle.getString("description")
+        bundle?.getInt("image")?.let { imgBookDetails.setImageResource(it) }
+        bookname.text = bundle?.getString("name")
+        bookDetails.text = bundle?.getString("description")
 
         val share_text_1_btn : FloatingActionButton = findViewById(R.id.fab)
 

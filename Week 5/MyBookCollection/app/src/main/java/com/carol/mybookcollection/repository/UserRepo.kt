@@ -1,32 +1,42 @@
 package com.carol.mybookcollection.repository
 
+import android.app.Application
+import android.os.AsyncTask
 import androidx.lifecycle.LiveData
 import com.carol.mybookcollection.model.UserAccount
 import com.carol.mybookcollection.db.UserAccountDao
+import com.carol.mybookcollection.db.UserAccountDatabase
 
-class UserRepository private constructor(private val userAccountDao: UserAccountDao) {
-    private val userAccountLiveData: LiveData<UserAccount>? = null
+class UserRepository (application: Application) {
+    private var daoAccess: UserAccountDao? = null
+    private var allData: LiveData<List<UserAccount>>? = null
 
-    fun isValidAccount(username: String, password: String): Boolean {
+    init {
+        //fetching user database
+        val db = UserAccountDatabase.getDatabase(application)
+        daoAccess = db?.daoAccess()
+        allData = daoAccess?.getDetails()
 
-        val userAccount = userAccountDao.getAccount(username)
-        return userAccount.password == password
     }
 
-    fun insertUser(username: String, password: String) {
-        val account =
-            UserAccount(username, password)
-        userAccountDao.insert(account)
+
+    fun getAllData(): LiveData<List<UserAccount>>? {
+        return allData
     }
 
-    companion object {
-        private var instance: UserRepository? = null
+    fun insertData(data: UserAccount) {
+        daoAccess?.let { LoginInsertion(it).execute(data) }
+    }
 
-        fun getInstance(userAccountDao: UserAccountDao): UserRepository {
-            if (instance == null) {
-                instance = UserRepository(userAccountDao)
-            }
-            return instance!!
+    private class LoginInsertion(private val daoAccess: UserAccountDao) :
+        AsyncTask<UserAccount, Void, Void>() {
+
+        override fun doInBackground(vararg data: UserAccount): Void? {
+
+            daoAccess.insertUserData(data[0])
+            return null
+
         }
+
     }
 }
