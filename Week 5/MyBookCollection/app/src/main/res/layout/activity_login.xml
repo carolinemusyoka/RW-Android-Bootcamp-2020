@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#182058"
+    android:background="#38b5f2"
     android:orientation="vertical"
     tools:context=".view.LoginActivity">
 
@@ -61,7 +61,8 @@
                         android:layout_marginTop="12dp"
                         android:background="@android:color/transparent"
                         android:maxLines="1"
-                        android:textColorHint="#c2c2c2"
+                        android:textColor="#090707"
+                        android:textColorHint="#0B0808"
                         android:textCursorDrawable="@drawable/grey_cursor_color"
                         android:textSize="15sp" />
 
@@ -98,7 +99,7 @@
                             android:inputType="textPassword"
                             android:maxLength="10"
                             android:maxLines="1"
-                            android:textColor="#333232"
+                            android:textColor="#000"
                             android:textCursorDrawable="@drawable/grey_cursor_color" />
 
                         <TextView
@@ -139,7 +140,7 @@
 
 
             <ImageView
-                android:id="@+id/login"
+                android:id="@+id/btn_login"
                 android:layout_width="68dp"
                 android:layout_height="68dp"
                 android:layout_gravity="bottom|center"
@@ -174,13 +175,13 @@
                 android:textSize="13.3sp" />
 
             <TextView
-                android:id="@+id/signup"
+                android:id="@+id/btn_register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:gravity="center_horizontal"
                 android:text="Sign Up"
-                android:textColor="#38b5f2"
+                android:textColor="#07090B"
                 android:textSize="13.3sp" />
 
         </LinearLayout>

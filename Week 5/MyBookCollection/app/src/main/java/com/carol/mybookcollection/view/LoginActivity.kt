@@ -1,13 +1,7 @@
 package com.carol.mybookcollection.view
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -19,7 +13,6 @@ import kotlinx.android.synthetic.main.activity_login.*
 
 
 class LoginActivity : AppCompatActivity() {
-
     /**
      * @param isExist  bool parameter for check existency of user or not in database
      */
@@ -29,22 +22,22 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        //calling viewmodel object
-        val userRepo = ViewModelProvider(this).get(UserViewModel::class.java)
+        //calling view mdioel object
+        val userDetailsRepository = ViewModelProvider(this).get(UserViewModel::class.java)
 
-        signup.setOnClickListener {
-            val intent = Intent(this@LoginActivity, SignUpActivity::class.java)
+        btn_register.setOnClickListener {
+            val intent = Intent(this, SignupActivity::class.java)
             // start your next activity
             startActivity(intent)
         }
 
 
-        login.setOnClickListener {
+        btn_login.setOnClickListener {
             if (validation()) {
 
 
-                userRepo.getGetAllData().observe(this, object : Observer<List<UserAccount>> {
-                    override fun onChanged(t: List<UserAccount>) {
+                userDetailsRepository.getGetAllData().observe(this,
+                    Observer<List<UserAccount>> { t ->
                         var userObject = t
 
                         for (i in userObject.indices) {
@@ -52,13 +45,12 @@ class LoginActivity : AppCompatActivity() {
 
                                 if (userObject[i].password?.equals(password.text.toString())!!) {
 
-                                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
-                                        .putExtra("UserDetials", userObject[i])
-                                    // start your next activity
+                                    val intent = Intent(this, MainActivity::class.java)
+
                                     startActivity(intent)
 
                                 } else {
-                                    Toast.makeText(this@LoginActivity, " Password is Incorrect ", Toast.LENGTH_LONG)
+                                    Toast.makeText(this, " Password is Incorrect ", Toast.LENGTH_LONG)
                                         .show()
                                 }
                                 isExist = true
@@ -73,12 +65,9 @@ class LoginActivity : AppCompatActivity() {
 
                         } else {
 
-                            Toast.makeText(this@LoginActivity, " User Not Registered ", Toast.LENGTH_LONG).show()
+                            Toast.makeText(this, " User Not Registered ", Toast.LENGTH_LONG).show()
                         }
-
-                    }
-
-                })
+                    })
             }
         }
 
@@ -93,15 +82,12 @@ class LoginActivity : AppCompatActivity() {
     private fun validation(): Boolean {
 
         if (username.text.isNullOrEmpty()) {
-            Toast.makeText(this@LoginActivity, " Enter Your Username ", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, " Enter UserName ", Toast.LENGTH_LONG).show()
             return false
         }
-        if (username.text.toString().length != 10) {
-            Toast.makeText(this@LoginActivity, " At least 10 characters ", Toast.LENGTH_LONG).show()
-            return false
-        }
+
         if (password.text.isNullOrEmpty()) {
-            Toast.makeText(this@LoginActivity, " Enter Password ", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, " Enter Password ", Toast.LENGTH_LONG).show()
             return false
         }
         return true
@@ -109,3 +95,4 @@ class LoginActivity : AppCompatActivity() {
 
 
 }
+

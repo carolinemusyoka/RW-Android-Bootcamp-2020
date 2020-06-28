@@ -12,6 +12,7 @@ class UserAccount : Serializable {
 
     var username: String? = null
     var password: String? = null
+    var fullname: String? = null
 
 
 }

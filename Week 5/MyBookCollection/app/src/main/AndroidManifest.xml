@@ -19,7 +19,7 @@
         </activity>
         <activity android:name=".view.MainActivity"/>
         <activity android:name=".BookDetails"/>
-        <activity android:name=".view.SignUpActivity"/>
+        <activity android:name=".view.SignupActivity"/>
 
 
 

@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.carol.mybookcollection.model.UserAccount
 
-@Database(entities = [UserAccount::class], version = 1, exportSchema = false)
+@Database(entities = [UserAccount::class], version = 2, exportSchema = true)
 abstract class UserAccountDatabase : RoomDatabase() {
 
     abstract fun daoAccess(): UserAccountDao
