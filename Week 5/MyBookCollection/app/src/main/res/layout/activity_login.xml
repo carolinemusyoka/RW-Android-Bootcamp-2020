@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#182058"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".view.LoginActivity">
 
 
     <LinearLayout
@@ -20,7 +19,8 @@
             android:layout_height="148.7dp"
             android:layout_gravity="center"
             android:layout_marginTop="21.7dp"
-            android:src="@drawable/book" />
+            android:src="@drawable/book"
+            android:contentDescription="TODO" />
 
 
         <FrameLayout
@@ -63,6 +63,7 @@
                         android:textSize="12.3sp" />
 
                     <EditText
+                        android:id="@+id/username"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
@@ -98,6 +99,7 @@
 
 
                         <EditText
+                            android:id="@+id/password"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@android:color/transparent"
@@ -114,7 +116,7 @@
                             android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"
                             android:gravity="center_horizontal"
-                            android:text="I Forgot"
+                            android:text="I Forgot?"
                             android:textColor="#38b5f2"
                             android:textSize="13.3sp" />
 
@@ -145,6 +147,7 @@
 
 
             <ImageView
+                android:id="@+id/login"
                 android:layout_width="68dp"
                 android:layout_height="68dp"
                 android:layout_gravity="bottom|center"
@@ -179,6 +182,7 @@
                 android:textSize="13.3sp" />
 
             <TextView
+                android:id="@+id/signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
