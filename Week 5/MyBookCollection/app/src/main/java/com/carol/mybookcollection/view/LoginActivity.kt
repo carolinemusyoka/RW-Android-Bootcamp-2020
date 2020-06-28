@@ -22,6 +22,10 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        txtforgot.setOnClickListener {
+            Toast.makeText(this, "Functionality Coming soon", Toast.LENGTH_LONG).show()
+        }
         //calling view mdioel object
         val userDetailsRepository = ViewModelProvider(this).get(UserViewModel::class.java)
 

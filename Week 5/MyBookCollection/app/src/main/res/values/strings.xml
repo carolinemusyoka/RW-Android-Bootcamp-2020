@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyBookCollection</string>
+    <string name="todo">TODO</string>
+    <string name="sula">Sula</string>
 </resources>
