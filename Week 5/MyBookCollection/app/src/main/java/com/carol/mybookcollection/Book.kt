@@ -1,13 +1,8 @@
 package com.carol.mybookcollection
 
-class Book {
-    var name: String? = null
-    var description: String? = null
-    var image: Int? = null
+class Book(name: String, description: String, image: Int) {
+    var name: String? = name
+    var description: String? = description
+    var image: Int? = image
 
-    constructor(name: String, description: String, image: Int) {
-        this.name = name
-        this.description = description
-        this.image = image
-    }
 }
