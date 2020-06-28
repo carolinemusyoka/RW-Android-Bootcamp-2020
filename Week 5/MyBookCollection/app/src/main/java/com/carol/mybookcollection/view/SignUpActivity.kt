@@ -36,10 +36,10 @@ class SignupActivity : AppCompatActivity() {
                     override fun onChanged(t: List<UserAccount>) {
                         var userObject = t
 
-                        for (i in t.indices) {
+                        for (i in userObject.indices) {
 
 
-                            if (t[i].username?.equals(username.text.toString())!!) {
+                            if (userObject[i].username?.equals(username.text.toString())!!) {
                                 isExist = true
                                 Toast.makeText(this@SignupActivity," User Already Registered ", Toast.LENGTH_LONG).show()
                                 break
@@ -52,7 +52,7 @@ class SignupActivity : AppCompatActivity() {
                         }
 
                         if (isExist) {
-                            Toast.makeText(this@SignupActivity, " User Already Registered !!! ", Toast.LENGTH_LONG)
+                            Toast.makeText(this@SignupActivity, " User  Registered Successfully ", Toast.LENGTH_LONG)
                                 .show()
 
                         } else {
