@@ -11,6 +11,7 @@ import android.widget.BaseAdapter
 import com.carol.mybookcollection.Book
 import com.carol.mybookcollection.BookDetails
 import com.carol.mybookcollection.R
+import com.carol.mybookcollection.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.book_entry.view.*
 
@@ -21,7 +22,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         // load foods
         booksList.add(

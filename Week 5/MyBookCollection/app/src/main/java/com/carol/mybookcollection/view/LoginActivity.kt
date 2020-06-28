@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.carol.mybookcollection.R
+import com.carol.mybookcollection.databinding.ActivityLoginBinding
 import com.carol.mybookcollection.model.UserAccount
 import com.carol.mybookcollection.viewmodel.UserViewModel
 import kotlinx.android.synthetic.main.activity_login.*
@@ -21,7 +22,9 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+
+        val binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         txtforgot.setOnClickListener {
             Toast.makeText(this, "Functionality Coming soon", Toast.LENGTH_LONG).show()

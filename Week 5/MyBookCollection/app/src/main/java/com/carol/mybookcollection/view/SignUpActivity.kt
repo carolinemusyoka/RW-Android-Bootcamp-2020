@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.carol.mybookcollection.R
+import com.carol.mybookcollection.databinding.ActivitySignUpBinding
 import com.carol.mybookcollection.db.UserAccountDatabase
 import com.carol.mybookcollection.model.UserAccount
 import com.carol.mybookcollection.viewmodel.UserViewModel
@@ -20,7 +21,8 @@ class SignupActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up)
+        val binding = ActivitySignUpBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         //calling view mdioel object
         val userDetailsRepository = ViewModelProvider(this@SignupActivity).get(UserViewModel::class.java)
 
