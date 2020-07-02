@@ -11,6 +11,7 @@ import androidx.appcompat.widget.SearchView
 import com.carol.podplay.R
 import com.carol.podplay.repository.ItunesRepo
 import com.carol.podplay.service.ItunesService
+import kotlinx.android.synthetic.main.activity_podcast.*
 
 class PodcastActivity : AppCompatActivity() {
 
@@ -40,6 +41,8 @@ class PodcastActivity : AppCompatActivity() {
             searchManager.getSearchableInfo(componentName)
         )
         return true
+
+        setupToolbar()
     }
     private fun performSearch(term:String){
         val itunesService = ItunesService.instance
@@ -60,5 +63,9 @@ class PodcastActivity : AppCompatActivity() {
            setIntent(intent)
            handleIntent(intent)
        }
+    }
+
+    private fun setupToolbar(){
+        setSupportActionBar(toolbar)
     }
 }
