@@ -1,0 +1,216 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:2:1-30:12
+MERGED from [com.google.android.material:material:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\a28e3071b49cd303c87ab88f035299ad\material-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\a8776343fdac874fa977e09d507079eb\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.3.0] C:\Gradle\caches\transforms-2\files-2.1\08a3e641d0512ce4cfded9e74ba4cfdf\jetified-core-ktx-1.3.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Gradle\caches\transforms-2\files-2.1\d38c63deeca963c558fe516b1169310c\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\4396c2f11dd7e645d9262d21ecccad75\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Gradle\caches\transforms-2\files-2.1\e9626a52cde72a57878ada1138a21e3c\room-runtime-2.2.5\AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\72f4849b83d53b2571ad8978bcb1b56e\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\9dd6d4381bc362d7587bb72c651fb209\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.0] C:\Gradle\caches\transforms-2\files-2.1\9fae1d9470ca5f28ff97c8eb9c26579e\fragment-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\e86f0abe5b3458becc57dbbb80920b2a\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\abccc1c353bc6ed3d84a5c7c42cea017\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\a24a7a6c912246e52b61a8cb65f65eb3\jetified-activity-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\d29b82594a1639c953ac7a1646b377b0\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\74ba376e5f4f34ef879a2bc253b663b3\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\db72437fffedc6d6e9a32ec555665f9e\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\9492c82d98945d6a3560cdf8b6af5799\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\139a7a702d2ebc2a699ac4bc6960f27e\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Gradle\caches\transforms-2\files-2.1\1fc08d1fb701a9d1159038109e40ebf8\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\55f7ae6cd9f600a5fd4360cfb1aa720c\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\e25e680e926d459eb2c19be324b11009\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\a84de7f37ff4cf01c9267f5b6c2c3b94\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\5f2de48748d4e50492a35211ea4efefc\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\558ffeba563cbd8612355279e1aa2046\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.0] C:\Gradle\caches\transforms-2\files-2.1\94f20d27a10319ac7cc954b79a2e42ae\core-1.3.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Gradle\caches\transforms-2\files-2.1\b3ee6408c3681fbd24de081a3a57da20\sqlite-framework-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Gradle\caches\transforms-2\files-2.1\5f4c9cd9b6e98b3cceba0470981deab3\sqlite-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\376def708fb6281d6ba3088f080671d7\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Gradle\caches\transforms-2\files-2.1\6ba631e2a83457d93ff6835fab260e17\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\f70602c81b18a67c8c51636dd73c9a9f\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\24d26877d60f9a9cf0f0dd26a87d5445\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\040833fe11640f1b8c4733bfce84961f\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\7e4df0cd08aa50f2127ae53aa41238ca\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\78a913978e37b54448a1dc2429e82473\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\8ba1861a037181f3766850afe0160a40\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:2:1-30:12
+	package
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:3:5-41
+		INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+		INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:2:1-30:12
+		INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:2:1-30:12
+		INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:5:5-28:19
+MERGED from [com.google.android.material:material:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\a28e3071b49cd303c87ab88f035299ad\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\a28e3071b49cd303c87ab88f035299ad\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Gradle\caches\transforms-2\files-2.1\d38c63deeca963c558fe516b1169310c\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Gradle\caches\transforms-2\files-2.1\d38c63deeca963c558fe516b1169310c\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Gradle\caches\transforms-2\files-2.1\e9626a52cde72a57878ada1138a21e3c\room-runtime-2.2.5\AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Gradle\caches\transforms-2\files-2.1\e9626a52cde72a57878ada1138a21e3c\room-runtime-2.2.5\AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\72f4849b83d53b2571ad8978bcb1b56e\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\72f4849b83d53b2571ad8978bcb1b56e\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.core:core:1.3.0] C:\Gradle\caches\transforms-2\files-2.1\94f20d27a10319ac7cc954b79a2e42ae\core-1.3.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.0] C:\Gradle\caches\transforms-2\files-2.1\94f20d27a10319ac7cc954b79a2e42ae\core-1.3.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\78a913978e37b54448a1dc2429e82473\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\78a913978e37b54448a1dc2429e82473\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.0] C:\Gradle\caches\transforms-2\files-2.1\94f20d27a10319ac7cc954b79a2e42ae\core-1.3.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.carol.mybookcollection.view.LoginActivity
+ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:13:9-19:20
+	android:name
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:13:19-53
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:14:13-18:29
+action#android.intent.action.MAIN
+ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:15:17-69
+	android:name
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:15:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:17:17-77
+	android:name
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:17:27-74
+activity#com.carol.mybookcollection.view.MainActivity
+ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:20:9-54
+	android:name
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:20:19-52
+activity#com.carol.mybookcollection.BookDetails
+ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:21:9-48
+	android:name
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:21:19-46
+activity#com.carol.mybookcollection.view.SignupActivity
+ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:22:9-56
+	android:name
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml:22:19-54
+uses-sdk
+INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\a28e3071b49cd303c87ab88f035299ad\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\a28e3071b49cd303c87ab88f035299ad\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\a8776343fdac874fa977e09d507079eb\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\a8776343fdac874fa977e09d507079eb\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.3.0] C:\Gradle\caches\transforms-2\files-2.1\08a3e641d0512ce4cfded9e74ba4cfdf\jetified-core-ktx-1.3.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.3.0] C:\Gradle\caches\transforms-2\files-2.1\08a3e641d0512ce4cfded9e74ba4cfdf\jetified-core-ktx-1.3.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Gradle\caches\transforms-2\files-2.1\d38c63deeca963c558fe516b1169310c\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Gradle\caches\transforms-2\files-2.1\d38c63deeca963c558fe516b1169310c\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\4396c2f11dd7e645d9262d21ecccad75\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\4396c2f11dd7e645d9262d21ecccad75\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Gradle\caches\transforms-2\files-2.1\e9626a52cde72a57878ada1138a21e3c\room-runtime-2.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Gradle\caches\transforms-2\files-2.1\e9626a52cde72a57878ada1138a21e3c\room-runtime-2.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\72f4849b83d53b2571ad8978bcb1b56e\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\72f4849b83d53b2571ad8978bcb1b56e\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\9dd6d4381bc362d7587bb72c651fb209\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\9dd6d4381bc362d7587bb72c651fb209\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0] C:\Gradle\caches\transforms-2\files-2.1\9fae1d9470ca5f28ff97c8eb9c26579e\fragment-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0] C:\Gradle\caches\transforms-2\files-2.1\9fae1d9470ca5f28ff97c8eb9c26579e\fragment-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\e86f0abe5b3458becc57dbbb80920b2a\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\e86f0abe5b3458becc57dbbb80920b2a\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\abccc1c353bc6ed3d84a5c7c42cea017\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\abccc1c353bc6ed3d84a5c7c42cea017\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\a24a7a6c912246e52b61a8cb65f65eb3\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\a24a7a6c912246e52b61a8cb65f65eb3\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\d29b82594a1639c953ac7a1646b377b0\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\d29b82594a1639c953ac7a1646b377b0\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\74ba376e5f4f34ef879a2bc253b663b3\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\74ba376e5f4f34ef879a2bc253b663b3\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\db72437fffedc6d6e9a32ec555665f9e\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\db72437fffedc6d6e9a32ec555665f9e\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\9492c82d98945d6a3560cdf8b6af5799\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\9492c82d98945d6a3560cdf8b6af5799\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\139a7a702d2ebc2a699ac4bc6960f27e\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\139a7a702d2ebc2a699ac4bc6960f27e\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Gradle\caches\transforms-2\files-2.1\1fc08d1fb701a9d1159038109e40ebf8\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Gradle\caches\transforms-2\files-2.1\1fc08d1fb701a9d1159038109e40ebf8\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\55f7ae6cd9f600a5fd4360cfb1aa720c\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\55f7ae6cd9f600a5fd4360cfb1aa720c\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\e25e680e926d459eb2c19be324b11009\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\e25e680e926d459eb2c19be324b11009\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\a84de7f37ff4cf01c9267f5b6c2c3b94\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\a84de7f37ff4cf01c9267f5b6c2c3b94\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\5f2de48748d4e50492a35211ea4efefc\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\5f2de48748d4e50492a35211ea4efefc\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\558ffeba563cbd8612355279e1aa2046\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\558ffeba563cbd8612355279e1aa2046\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.0] C:\Gradle\caches\transforms-2\files-2.1\94f20d27a10319ac7cc954b79a2e42ae\core-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0] C:\Gradle\caches\transforms-2\files-2.1\94f20d27a10319ac7cc954b79a2e42ae\core-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Gradle\caches\transforms-2\files-2.1\b3ee6408c3681fbd24de081a3a57da20\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Gradle\caches\transforms-2\files-2.1\b3ee6408c3681fbd24de081a3a57da20\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Gradle\caches\transforms-2\files-2.1\5f4c9cd9b6e98b3cceba0470981deab3\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Gradle\caches\transforms-2\files-2.1\5f4c9cd9b6e98b3cceba0470981deab3\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\376def708fb6281d6ba3088f080671d7\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\376def708fb6281d6ba3088f080671d7\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Gradle\caches\transforms-2\files-2.1\6ba631e2a83457d93ff6835fab260e17\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Gradle\caches\transforms-2\files-2.1\6ba631e2a83457d93ff6835fab260e17\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\f70602c81b18a67c8c51636dd73c9a9f\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\f70602c81b18a67c8c51636dd73c9a9f\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\24d26877d60f9a9cf0f0dd26a87d5445\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\24d26877d60f9a9cf0f0dd26a87d5445\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\040833fe11640f1b8c4733bfce84961f\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\040833fe11640f1b8c4733bfce84961f\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\7e4df0cd08aa50f2127ae53aa41238ca\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\7e4df0cd08aa50f2127ae53aa41238ca\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\78a913978e37b54448a1dc2429e82473\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Gradle\caches\transforms-2\files-2.1\78a913978e37b54448a1dc2429e82473\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\8ba1861a037181f3766850afe0160a40\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Gradle\caches\transforms-2\files-2.1\8ba1861a037181f3766850afe0160a40\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+		INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+		ADDED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+		INJECTED from E:\RW-Android-Bootcamp-2020\Week 5\MyBookCollection\app\src\main\AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.2.5] C:\Gradle\caches\transforms-2\files-2.1\e9626a52cde72a57878ada1138a21e3c\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.2.5] C:\Gradle\caches\transforms-2\files-2.1\e9626a52cde72a57878ada1138a21e3c\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.2.5] C:\Gradle\caches\transforms-2\files-2.1\e9626a52cde72a57878ada1138a21e3c\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.2.5] C:\Gradle\caches\transforms-2\files-2.1\e9626a52cde72a57878ada1138a21e3c\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Gradle\caches\transforms-2\files-2.1\baba86cab54814236486aa2734bd9aab\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
