@@ -31,7 +31,7 @@ class UserRepository (application: Application) {
     private class LoginInsertion(private val daoAccess: UserAccountDao) :
         AsyncTask<UserAccount, Void, Void>() {
 
-        override fun doInBackground(vararg data: UserAccount): Void? {
+         override fun doInBackground(vararg data: UserAccount): Void? {
 
             daoAccess.insertUserData(data[0])
             return null

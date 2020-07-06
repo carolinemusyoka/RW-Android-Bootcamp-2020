@@ -9,19 +9,19 @@ import androidx.lifecycle.ViewModelProvider
 import com.carol.mybookcollection.db.UserAccountDatabase
 import com.carol.mybookcollection.model.UserAccount
 import com.carol.mybookcollection.repository.UserRepository
+import kotlinx.coroutines.coroutineScope
 
 class UserViewModel(application: Application) : AndroidViewModel(application) {
 
-    private var repository: UserRepository
+    private var repository: UserRepository = UserRepository(application)
     private var getAllDatas: LiveData<List<UserAccount>>
 
     init {
 
-        repository = UserRepository(application)
         getAllDatas = repository.getAllData()!!
     }
 
-    fun insert(data: UserAccount) {
+    suspend fun insert(data: UserAccount) = coroutineScope {
         repository.insertData(data)
     }
     fun getGetAllData(): LiveData<List<UserAccount>> {
