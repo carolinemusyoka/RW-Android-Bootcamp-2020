@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\RW-Android-Bootcamp-2020\\Week 6\\MyBookCollection\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "E:\\RW-Android-Bootcamp-2020\\Week 5\\MyBookCollection\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Gradle\\caches\\transforms-2\\files-2.1\\a28e3071b49cd303c87ab88f035299ad\\material-1.1.0\\res\\values-night-v8\\values-night-v8.xml",

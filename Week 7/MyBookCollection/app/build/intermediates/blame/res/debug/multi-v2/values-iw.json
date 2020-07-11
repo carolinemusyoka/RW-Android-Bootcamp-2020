@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\RW-Android-Bootcamp-2020\\Week 6\\MyBookCollection\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-iw\\values-iw.xml",
+            "outputFile": "E:\\RW-Android-Bootcamp-2020\\Week 5\\MyBookCollection\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-iw\\values-iw.xml",
             "map": [
                 {
                     "source": "C:\\Gradle\\caches\\transforms-2\\files-2.1\\a8776343fdac874fa977e09d507079eb\\appcompat-1.1.0\\res\\values-iw\\values-iw.xml",
