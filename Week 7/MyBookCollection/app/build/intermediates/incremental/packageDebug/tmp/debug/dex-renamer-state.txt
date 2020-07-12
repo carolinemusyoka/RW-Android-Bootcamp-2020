@@ -1,4 +1,0 @@
-#Sun Jun 28 22:50:02 EAT 2020
-base.0=E\:\\RW-Android-Bootcamp-2020\\Week 5\\MyBookCollection\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
