@@ -46,3 +46,13 @@ Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/view/MainVi
 *.kt
 *.kt
 Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/view/MainViewModel.kt
+Week 7/MyBookCollection/.idea/workspace.xml
+Week 7/MyBookCollection/.idea/workspace.xml
+Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/APIService.kt
+Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/model/Book.kt
+Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/NewytService.kt
+Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/response/BookBodyResponse.kt
+Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/response/BookDetailsResponse.kt
+Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/response/BookResultsResponse.kt
+Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/view/MainRecyclerViewAdapter.kt
+Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/view/MainViewModel.kt
