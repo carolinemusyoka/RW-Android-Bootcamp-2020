@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MarvelAPI</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+    <string name="characters_fragment_description">We are Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. We are Groot.We are Groot. I am Groot.
+        I am Groot. I am Groot. We are Groot. I am Groot. I am Groot. I am Groot. I am Groot. I am Groot. I am Groot. I am Groot. We are Groot. I am Groot.
+        I am Groot. I am Groot. We are Groot. I am Groot. </string>
+</resources>
