@@ -33,18 +33,9 @@ Week 7/NewsFinder/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1
 Week 7/NewsFinder/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml
 Week 7/NewsFinder/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml
 Week 7/NewsFinder/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_aar.xml
-*.xml
 Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/response/BookBodyResponse.kt
 Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/response/BookResultsResponse.kt
 Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/view/MainViewModel.kt
-*.bin
-*.xml
-*.gradle
-*.iml
-*.xml
-*.kt
-*.kt
-*.kt
 Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/view/MainViewModel.kt
 Week 7/MyBookCollection/.idea/workspace.xml
 Week 7/MyBookCollection/.idea/workspace.xml
@@ -57,3 +48,4 @@ Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/response/Bo
 Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/view/MainRecyclerViewAdapter.kt
 Week 7/MyBookCollection/app/src/main/java/com/carol/mybookcollection/view/MainViewModel.kt
 Week 7/MyBookCollection/.idea/workspace.xml
+GalaxyFetch/.idea/workspace.xml
