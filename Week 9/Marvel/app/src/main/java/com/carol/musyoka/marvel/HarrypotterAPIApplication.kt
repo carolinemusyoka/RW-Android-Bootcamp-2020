@@ -3,8 +3,8 @@ package com.carol.musyoka.marvel
 import android.app.Application
 import com.carol.musyoka.marvel.marvelapi.api.NetworkOptions
 import com.carol.musyoka.marvel.marvelapi.di.AppComponent
-import com.carol.musyoka.marvel.marvelapi.utils.convertToMD5
 import com.carol.musyoka.marvel.marvelapi.di.DaggerAppComponent
+import com.carol.musyoka.marvel.marvelapi.utils.convertToMD5
 
 class HarrypotterAPIApplication : Application() {
     private lateinit var appComponent: AppComponent
