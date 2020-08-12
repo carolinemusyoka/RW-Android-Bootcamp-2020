@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // load foods
+        // load books
         booksList.add(
             Book(
                 "Harry Potter and The Chamber of Secrets",
