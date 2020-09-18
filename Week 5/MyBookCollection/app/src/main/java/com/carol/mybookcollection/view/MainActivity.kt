@@ -26,7 +26,11 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+<<<<<<< Updated upstream
         // load books
+=======
+
+>>>>>>> Stashed changes
         booksList.add(
             Book(
                 "Harry Potter and The Chamber of Secrets",

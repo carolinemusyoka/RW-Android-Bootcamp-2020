@@ -1,4 +1,4 @@
-package com.carol.listmaker
+package com.carol.listmaker.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,9 +9,14 @@ import android.widget.EditText
 import android.widget.FrameLayout
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.carol.listmaker.fragments.ListDetailFragment
+import com.carol.listmaker.fragments.ListSelectionFragment
+import com.carol.listmaker.R
+import com.carol.listmaker.TaskList
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), ListSelectionFragment.OnListItemFragmentInteractionListener {
+class MainActivity : AppCompatActivity(),
+    ListSelectionFragment.OnListItemFragmentInteractionListener {
 
     private var largeScreen = false
     private var listFragment: ListDetailFragment? = null

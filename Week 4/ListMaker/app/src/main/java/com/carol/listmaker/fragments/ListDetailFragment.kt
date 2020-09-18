@@ -1,4 +1,4 @@
-package com.carol.listmaker
+package com.carol.listmaker.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.carol.listmaker.ListItemsRecyclerViewAdapter
+import com.carol.listmaker.R
+import com.carol.listmaker.TaskList
+import com.carol.listmaker.activities.MainActivity
 
 class ListDetailFragment : Fragment() {
 

@@ -1,8 +1,10 @@
-package com.carol.listmaker
+package com.carol.listmaker.fragments
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.carol.listmaker.R
+import com.carol.listmaker.TaskList
 
 class ListSelectionRecyclerViewAdapter(
     private val lists: ArrayList<TaskList>,
@@ -16,7 +18,8 @@ class ListSelectionRecyclerViewAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListSelectionViewHolder {
         // 1
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.list_selection_view_holder,
+            .inflate(
+                R.layout.list_selection_view_holder,
                 parent,
                 false)
         // 2

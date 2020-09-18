@@ -1,4 +1,4 @@
-package com.carol.listmaker
+package com.carol.listmaker.activities
 
 import android.app.Activity
 import android.content.Intent
@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.carol.listmaker.ListItemsRecyclerViewAdapter
+import com.carol.listmaker.R
+import com.carol.listmaker.TaskList
 
 class ListDetailActivity : AppCompatActivity() {
 
