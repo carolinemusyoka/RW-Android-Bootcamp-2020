@@ -10,7 +10,7 @@ import android.widget.FrameLayout
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.carol.listmaker.fragments.ListDetailFragment
-import com.carol.listmaker.fragments.ListSelectionFragment
+import com.carol.listmaker.ListSelectionFragment
 import com.carol.listmaker.R
 import com.carol.listmaker.TaskList
 import kotlinx.android.synthetic.main.activity_main.*
